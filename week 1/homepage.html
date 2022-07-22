@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBS - Home</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        .bottom-container {
+            display: flex;
+        }
+
+        #left-frame {
+            flex-grow: 1;
+            display: block;
+        }
+
+        #right-frame {
+            flex-grow: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe src="topFrame.html" frameborder="0" width="100%" height="180"></iframe>
+    <div class="bottom-container">
+        <iframe id="left-frame" src="leftFrame.html" frameborder="0" height="200"></iframe>
+        <iframe id="right-frame" src="./catalogues/welcome.html" frameborder="0" height="500"></iframe>
+    </div>
+
+    <script>
+        function setRightFrame(file) {
+            document.querySelector("#right-frame").src = file;
+        }
+        function setCurrentLocation(file) {
+        }
+    </script>
+</body>
+
+</html>
