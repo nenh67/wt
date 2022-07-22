@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branches</title>
+
+    <style>
+        body {
+            border: 1px solid black;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            /* align-items: flex-start; */
+            justify-content: space-evenly;
+            padding: 0 .5rem;
+        }
+
+        li {
+            cursor: pointer;
+            color: black;
+            background-color: white;
+            border-radius: 1rem;
+            padding: .5rem 1rem;
+            text-decoration: none;
+        }
+
+        li:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li onclick="parent.setRightFrame('./catalogues/cse.html')">CSE</li>
+        <li onclick="parent.setRightFrame('./catalogues/it.html')">IT</li>
+        <li onclick="parent.setRightFrame('./catalogues/ece.html')">ECE</li>
+        <li onclick="parent.setRightFrame('./catalogues/eee.html')">EEE</li>
+    </ul>
+</body>
+
+</html>

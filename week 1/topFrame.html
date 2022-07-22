@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        li {
+            cursor: pointer;
+            color: black;
+            background-color: white;
+            border-radius: 1rem;
+            padding: .5rem 1rem;
+            text-decoration: none;
+        }
+
+        li:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Online Book Store</h1>
+    <ul>
+        <li>Home</li>
+        <li onclick="parent.setRightFrame('login.html')">Login</li>
+        <li onclick="parent.setRightFrame('registration.html')">Registration</li>
+        <li onclick="parent.setRightFrame('./catalogues/welcome.html')">Catalogue</li>
+        <li onclick="parent.setRightFrame('./catalogues/cart.html')">Cart</li>
+    </ul>
+</body>
+
+</html>

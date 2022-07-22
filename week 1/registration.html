@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        label {
+            width: 80px;
+            display: inline-block;
+        }
+
+        body {
+            border: 1px solid black;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="#">
+        <div>
+            <label for="firstName">First Name: </label>
+            <input type="text" id="firstName" name="firstName">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="lastName">Last Name: </label>
+            <input type="text" id="lastName" name="lastName">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="userName">User Name: </label>
+            <input type="text" id="userName" name="userName">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="male">Gender: </label>
+            <input type="radio" name="gender" id="male" checked="checked">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+        </div>
+
+        <br>
+        
+        <input type="submit">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.navBar ul {
+    /* width: 100vw; */
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navBar ul li {
+    display: inline-flex;
+}
