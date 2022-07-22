@@ -1,42 +1,25 @@
-body {
-    /* background-color: black; */
-    background: url(https://i.stack.imgur.com/RLQNm.jpg) no-repeat;
-    background-size: cover;
-    /* backgrou; */
+p.center
+{
+    text-align:center;
+    text-decoration:underline;
+    text-transform:uppercase;
+    letter-spacing:-3px;
+    word-spacing:20px;
+    font-size:larger;
 }
-
-ul {
-    list-style: none;
-    width: 100vw;
-    display: flex;
-    justify-content: space-evenly;
+p.right
+{
+    text-align:right;
+    color:red;
+    font-family:Tahoma;
+    font-size:15pt;
+    text-decoration:overline;
+    font-style:italic;
 }
-
-a {
-    color: black;
-    background-color: white;
-    border-radius: 1rem;
-    padding: .5rem 1rem;
-    text-decoration: none;
-}
-/* 
-a:visited {
-    color: black;
-    background-color: white;
-    border-radius: 1rem;
-    padding: .5rem 1rem;
-    text-decoration: none;
-}
-
-a:active {
-    color: black;
-    background-color: white;
-    border-radius: 1rem;
-    padding: .5rem 1rem;
-    text-decoration: none;
-} */
-
-a:hover {
-    background-color: black;
-    color: white;
+b#headline
+{
+    color:orange;
+    font-size:22px;
+    font-family:arial;
+    text-decoration:underline;
 }
